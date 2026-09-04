@@ -1,0 +1,111 @@
+/* Deliberately plain. These three pages exist so Google and Apple have something to point
+   at, and so a reader who wants to know what the app holds can find out in one screen. A
+   design would only get in the way of both. */
+:root {
+    --forest: #1f4f3d;
+    --moss: #577d5f;
+    --ink: #212621;
+    --cream: #fbf9f1;
+    --parchment: #f5f1e1;
+    --rule: #dcd6c2;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 0 20px 80px;
+    background: var(--cream);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+main { max-width: 44rem; margin: 0 auto; }
+
+header {
+    padding: 56px 0 28px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 32px;
+}
+
+.eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--moss);
+    margin: 0 0 10px;
+}
+
+h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.1rem;
+    line-height: 1.2;
+    margin: 0;
+    color: var(--forest);
+}
+
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.3rem;
+    margin: 40px 0 12px;
+    color: var(--forest);
+}
+
+h3 { font-size: 1.02rem; margin: 26px 0 8px; }
+
+a { color: var(--forest); }
+
+.updated { color: #6b6f6b; font-size: 15px; margin-top: 12px; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+    font-size: 15.5px;
+}
+
+th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: 11px 12px;
+    border-bottom: 1px solid var(--rule);
+}
+
+th { background: var(--parchment); font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; }
+
+.note {
+    background: var(--parchment);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin: 22px 0;
+}
+
+.note p:first-child { margin-top: 0; }
+.note p:last-child { margin-bottom: 0; }
+
+ul { padding-left: 22px; }
+li { margin: 7px 0; }
+
+footer {
+    margin-top: 56px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+    font-size: 15px;
+    color: #6b6f6b;
+}
+
+nav a { margin-right: 18px; }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --cream: #141714;
+        --parchment: #1d211d;
+        --ink: #e6e4da;
+        --rule: #333a33;
+        --forest: #8fc3a5;
+        --moss: #9fbfa3;
+    }
+    footer, .updated { color: #9a9e99; }
+}
